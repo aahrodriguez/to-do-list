@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  priority: MyString
+  content: MyString
+  user: one
+  done: false
+
+two:
+  priority: MyString
+  content: MyString
+  user: two
+  done: false
