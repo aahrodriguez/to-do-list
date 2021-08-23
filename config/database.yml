@@ -80,9 +80,9 @@ test:
 #
 production:
   <<: *default
-  host: ec2-35-153-114-74.compute-1.amazonaws.com
-  database: d663p3a7dekfuc
-  user: cozaavdnvpwbkv
+  host: ec2-52-203-74-38.compute-1.amazonaws.com
+  database: d8v3q2uk8ids5l
+  user: hedkimmsqlmmea
   port: 5432
-  password: a5458dafdf49049c6708bfd953a54d191595b84c33e517dbde7d9e32b816c4bc
-  uri: postgres://cozaavdnvpwbkv:a5458dafdf49049c6708bfd953a54d191595b84c33e517dbde7d9e32b816c4bc@ec2-35-153-114-74.compute-1.amazonaws.com:5432/d663p3a7dekfuc
+  password: 1e7fb6c7aa1d8ea8bac3cbe4c81462071b17016d98a1abb1f90628cdd8d39ac5
+  uri: postgres://hedkimmsqlmmea:1e7fb6c7aa1d8ea8bac3cbe4c81462071b17016d98a1abb1f90628cdd8d39ac5@ec2-52-203-74-38.compute-1.amazonaws.com:5432/d8v3q2uk8ids5l
