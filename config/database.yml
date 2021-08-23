@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: to_do_list_production
-  username: to_do_list
-  password: <%= ENV['TO_DO_LIST_DATABASE_PASSWORD'] %>
+  database: d663p3a7dekfuc
+  username: cozaavdnvpwbkv
+  password: a5458dafdf49049c6708bfd953a54d191595b84c33e517dbde7d9e32b816c4bc
