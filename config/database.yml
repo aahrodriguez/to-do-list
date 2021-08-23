@@ -80,6 +80,9 @@ test:
 #
 production:
   <<: *default
+  host: ec2-35-153-114-74.compute-1.amazonaws.com
   database: d663p3a7dekfuc
-  username: cozaavdnvpwbkv
+  user: cozaavdnvpwbkv
+  port: 5432
   password: a5458dafdf49049c6708bfd953a54d191595b84c33e517dbde7d9e32b816c4bc
+  uri: postgres://cozaavdnvpwbkv:a5458dafdf49049c6708bfd953a54d191595b84c33e517dbde7d9e32b816c4bc@ec2-35-153-114-74.compute-1.amazonaws.com:5432/d663p3a7dekfuc
