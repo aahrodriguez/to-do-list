@@ -3,18 +3,18 @@ class TasksController < ApplicationController
 
   def index
     unless params[:q] || params[:search]
-      @tasks = Task.all
+      @tasks = Task.where(user_id: current_user.id)
     else
       if params[:q] == "high"
-        @tasks = Task.all.order(priority: :desc)
+        @tasks = Task.where(user_id: current_user.id).order(priority: :desc)
       elsif params[:q] == "low"
-        @tasks = Task.all.order(priority: :asc)
+        @tasks = Task.where(user_id: current_user.id).order(priority: :asc)
       elsif params[:q] == "older"
-        @tasks = Task.all.order(created_at: :asc)
+        @tasks = Task.where(user_id: current_user.id).order(created_at: :asc)
       elsif params[:q] == "recent"
-        @tasks = Task.all.order(created_at: :desc)
+        @tasks = Task.where(user_id: current_user.id).order(created_at: :desc)
       elsif params[:search][:i]
-        @tasks = Task.all.where content: params[:search][:i]
+        @tasks = Task.where(user_id: current_user.id, content: params[:search][:i])
       end
     end
   end
